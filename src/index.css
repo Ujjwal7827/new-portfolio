@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@import "tailwindcss";
+
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-border {
+  background-size: 200% 200%;
+  animation: gradient-border 2s ease infinite;
+}
+#about-pic{
+         border: 1px solid white;
+        border-radius:30% 70% 71% 29% / 30% 51% 49% 70%
+         
+}
+#img-bg{
+  border-radius:30% 70% 71% 29% / 30% 51% 49% 70% 
+}
+#skill-sec:hover{
+  scale: 1.05;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  
+
+
+  
+}
+#contact-bt:hover{
+  scale: 1.05;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}

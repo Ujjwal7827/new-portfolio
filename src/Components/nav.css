@@ -1,0 +1,34 @@
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 10vh;
+    backdrop-filter:blur(10px); 
+    background: rgba(13 13 48 / 43%);
+}
+
+#list li {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+
+#list li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: greenyellow;
+  transition: width 0.3s ease;
+}
+
+#list li:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+  
+}
