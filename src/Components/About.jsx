@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div 
       id='About' 
-      className='bg-[#0d0d30] text-white  md:flex overflow-hidden md:flex-wrap md:justify-center shadow-2xl md:mx-20
+      className='bg-[#0d0d30] text-white  mx-auto md:flex overflow-hidden md:flex-wrap md:justify-center shadow-2xl md:mx-20
       bg-opacity-30 mt-25 rounded-lg  h-160  p-14 sm:px-6 md:px-10 lg:px-20 py-8 md:py-12 '> 
     
       <div className='max-w-6xl w-full'>
@@ -61,7 +61,7 @@ const About = () => {
                   <h3 className='text-lg sm:text-xl md:text-2xl font-semibold border-b-2 pb-1 sm:pb-2'data-aos="fade-left"
                     data-aos-duration="2000">Developer Journey</h3>
                   <p 
-                    className='text-xs sm:text-sm md:text-base mt-1 sm:mt-2'
+                    className='text-xs sm:text-sm mx-auto md:text-base mt-1 sm:mt-2'
                     data-aos="fade-left"
                     data-aos-duration="2000" >
                     Initially faced many challenges in learning programming, but through consistent effort and step-by-step progress, I've developed strong skills and find it very interesting now.
@@ -76,4 +76,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About 

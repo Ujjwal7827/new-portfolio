@@ -9,11 +9,17 @@
     background: rgba(13 13 48 / 43%);
 }
 
+
+
 #list li {
   position: relative;
   padding-bottom: 2px;
 }
 
+
+ul{
+  width: 900px;
+}
 
 #list li::after {
   content: '';
@@ -31,4 +37,44 @@
   right: auto;
   left: 0;
   
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    margin: 25px;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.treedot, .cross {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  margin: 25px 1rem;
+  transition: all 1s ease;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.treedot:hover,
+.cross:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 768px) {
+  .treedot,
+  .cross {
+    display: none;
+  }
 }

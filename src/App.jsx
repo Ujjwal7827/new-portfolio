@@ -4,6 +4,7 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Skill from './Components/skill'
 import Project from './Components/Project'
+import Footer from './Components/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -12,19 +13,20 @@ const App = () => {
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
-      once: true,
+      once: false,
       mirror: false
     })
   }, [])
 
   return (
     <div className='bg-[#171d32] min-h-screen w-full overflow-x-hidden'>
-      <title>Ujjwal</title>
+      
       <Navbar/>
       <Home/>
       <About />
       <Skill />
       <Project/>
+      <Footer />
 
     </div>
   )

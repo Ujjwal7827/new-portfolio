@@ -12,10 +12,13 @@ const Navbar = () => {
     
       <nav id='navbar' className="  bg-[#0d0d30]  absolute flex flex-wrap justify-between   md:items-center text-[#8b9eb2]  px-10  md:px-20"
       data-aos="fade-down">
-          <span className='text-3xl  text-white tracking-wide'>PORTFOLIO</span>
+          <span className=' block text-3xl  text-white tracking-wide'>PORTFOLIO</span>
 
-          <ul id='list' className={`${menu ? "block" : "hidden"} absolute w-full  bg-black bg-opacity-30 md:bg-transparent  md:relative md:flex md:gap-10 md:justify-end 
-          md:p-0 md:mt-0 md:flex-row md:items-center md:text-center md:border-none md:mx-0`}>
+          <ul id="list" className={`main-Nav ${menu ? "block" : "hidden"}   absolute top-16 left-0 w-full  bg-black/70 backdrop-blur-md shadow-md 
+              transition-all duration-300 ease-in-out rounded-b-2xl px-6 py-4 space-y-4 z-40 md:static md:flex md:flex-row md:items-center md:justify-end 
+               md:space-y-0 md:space-x-10 md:bg-transparent  md:backdrop-blur-0 md:shadow-none md:rounded-none md:p-0 md:mt-0 md:w-auto`}
+>
+
             <a href="#Home">
             <li  className='text-md  text-blue-50 text-xl p-1 md:p-0'> Home</li>
             </a>
@@ -34,10 +37,10 @@ const Navbar = () => {
             
           </ul>
           {showmenu ? (
-            <RiMenu2Line size={30} className='md:hidden absolute   right-10 top-6 transition-all duration-300' onClick={()=>
+            <RiMenu2Line size={30} className=' treedot md:hidden absolute  right-10  top-2 transition-all duration-300' onClick={()=>
               {openmenu(!menu); setmenu(!showmenu);}}/>
           ):(
-          <RiCloseLine size={30} className='md:hidden absolute right-10  top-6 transition-all duration-300' onClick={()=>{
+          <RiCloseLine size={30} className=' cross md:hidden absolute right-10 top-2 transition-all duration-300' onClick={()=>{
             openmenu(false); setmenu(!false);
 
           }} />
